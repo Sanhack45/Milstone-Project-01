@@ -5,44 +5,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,300;0,400;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <style type="text/tailwindcss">
-        @font  {
-            --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
-    --font-sans:  "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
-        }
-    </style>
+
+
+
 </head>
 
 <body>
     <!-- header-section -->
     <section>
-        <header class="bg-[#d1c59c] shadow-lg">
-            <div class="parent-header mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <header>
+            <div></div>
+        </header>
+        <header class="bg-(--cream) shadow-lg sticky top-0 z-50">
+            <div
+                class="parent-header  mx-auto flex max-w-7xl   items-center justify-between px-4 py-3 sm:px-6  lg:px-8">
 
 
-                <img src="image/ChatGPT Image Sep 28, 2026, 12_34_08 AM.png" class="h-20 w-auto ">
+                <img src="image/logo.png" class="h-16 w-auto ">
 
                 <!-- Navigation -->
-                <ul class=" text-3xl items-center gap-6 lg:flex xl:gap-8">
-                    <li><a href="#" class="text-sm font-medium text-white transition hover:text-amber-400">Home</a></li>
-                    <li><a href="#" class="text-sm font-medium text-white transition hover:text-amber-400">Menu</a></li>
-                    <li><a href="#" class="text-sm font-medium text-white transition hover:text-amber-400">Order Online</a></li>
-                    <li><a href="#" class="text-sm font-medium text-white transition hover:text-amber-400">Book A Table</a></li>
-                    <li><a href="#" class="text-sm font-medium text-white transition hover:text-amber-400">Bulk Orders</a></li>
-                    <li><a href="#" class="text-sm font-medium text-white transition hover:text-amber-400">Outlets</a>
+                <ul class="hidden items-center gap-6 md:flex xl:gap-8">
+                    <li><a href="#" class=" transition hover:text-amber-400">Home</a></li>
+                    <li><a href="#" class="t transition hover:text-amber-400">Menu</a></li>
+                    <li><a href="#" class=" transition hover:text-amber-400">Order
+                            Online</a></li>
+                    <li><a href="#" class=" transition hover:text-amber-400">Book A
+                            Table</a></li>
+                    <li><a href="#" class=" transition hover:text-amber-400">Bulk
+                            Orders</a></li>
+                    <li><a href="#" class=" transition hover:text-amber-400">Outlets</a>
                     </li>
+
+
                 </ul>
+                <div class="text-white flex gap-9">
 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
 
-                <button
-                    class="hidden rounded-full bg-amber-400 px-5 py-2.5 text-sm font-semibold text-[#063F32] shadow-md transition duration-300 hover:bg-amber-300 sm:block">
-                    Book a Table
-                </button>
+                <a href="">
+
+                    <button
+                        class="relative flex items-center gap-3 overflow-hidden rounded-full bg-[#f7cb0be3] px-7 py-3.5 text-sm font-bold text-black shadow-md transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:text-[#a8432a] hover:shadow-[0_10px_30px_rgba(212,160,23,0.25)]">
+                        Book a Table
+                    </button>
+                </a>
 
             </div>
         </header>
@@ -50,9 +68,9 @@
 
 
     <!-- section 02 hero section -->
-    <section class="bg-[rgb(169,197,169)]">
+    <section class="hero">
         <div
-            class="hero-parent  mx-auto flex max-w-7xl flex-col items-center justify-between gap-10 px-4 py-14 sm:px-6 md:py-20 lg:flex-row lg:px-8">
+            class="hero-parent   m-auto flex max-w-7xl flex-col items-center justify-between gap-10 px-4 py-14 sm:px-6 md:py-20 lg:flex-row lg:px-8">
 
 
             <div class=" hero-parent  w-full lg:w-1/2">
@@ -62,8 +80,7 @@
                     ------------------Since 2014
                 </span>
 
-                <h1
-                    class="mt-5 font-['Playfair_Display'] text-5xl font-semibold leading-tight text-[#17212B] sm:text-6xl md:text-7xl ">
+                <h1 class="mt-5  text-5xl font-semibold leading-tight text-[#17212B] sm:text-6xl md:text-7xl">
 
                     A table <br> worth
                     <span class="text-amber-400">
@@ -85,54 +102,326 @@
                 <div class="flex gap-3 ">
 
                     <button
-                        class="   px-4 py-3  rounded-full bg-amber-400 text-sm font-semibold text-[#063F32] shadow-md transition duration-300 hover:bg-amber-300 sm:block">Explore
+                        class="   px-4 py-3  rounded-full bg-amber-400 text-sm font-semibold text-[#063F32] shadow-md transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:text-[#a8432a] hover:shadow-[0_10px_30px_rgba(212,160,23,0.25)]">Explore
                         Menu</button>
                     <button
-                        class="rounded-full text-sm font-semibold text-[#063F32] shadow-md transition duration-300 hover:bg-black sm:block">Order
+                        class="rounded-full text-sm font-semibold text-[#063F32] shadow-md transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:text-[#a8432a] hover:shadow-[0_10px_30px_rgba(212,160,23,0.25)]">Order
                         Online</button>
                 </div>
             </div>
+
+
+            <!-- right side hero section -->
+
+
+            <div class="relative w-[800px] h-[670px]">
+
+
+                <div class="absolute ">
+                    <img src="image/hero.png" class="w-full h-full object-cover" alt="Burger">
+
+
+
+                </div>
+
+
+                <div class="absolute top-12 left-0 bg-white rounded-2xl p-5 shadow-xl animate-bounce">
+                    <b class="text-lg">🔥 &nbsp;Hot Deal</b>
+                    <p class="text-xs text-gray-400 mt-1">30% off today</p>
+                </div>
+
+
+                <div class="absolute top-42 right-0 bg-white rounded-2xl p-5 shadow-xl animate-bounce">
+                    <b class="text-lg">🕐 &nbsp;20 min</b>
+                    <p class="text-xs text-gray-400 mt-1">Fast delivery</p>
+                </div>
+
+
+                <div class="absolute bottom-16 right-5 bg-white rounded-2xl p-5 shadow-xl animate-bounce">
+                    <b class="text-lg">⭐ &nbsp;4.9/5</b>
+                    <p class="text-xs text-gray-400 mt-1">2k+ reviews</p>
+                </div>
+
+            </div>
+
+
         </div>
 
+    </section>
 
 
 
 
-        <!-- why choose section -->
-        <section class="bg-gray-50">
-            <div class="  mx-auto  flex max-w-7xl justify-center items-center text-center h-36">
-                <div>
 
-                    <h1 class="text-4xl font-serif  font-extrabold">Why choose Us</h1>
-                    <span>Good food</span>&nbsp;&nbsp;&nbsp;
-                    <span>Fresh ingridient</span>&nbsp; &nbsp;&nbsp;
-                    <span>Happy Moments</span>
+
+
+    <!-- why choose section -->
+    <section class=" py-24 w-full ">
+        <div class="  m-auto ">
+
+
+
+            <!-- why choose box  -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
+
+
+                <div class="grow-0 relative mt-8">
+                    <div class=" absolute top-4 left-3.5 px-4 py-14 rounded-3xl bg-[red] text-white">
+                        <strong>
+                            <p class="text-2xl font-bold">
+
+                                12+
+                            </p>
+                            <br>Years of
+                            <br>Excellence
+                        </strong>
+
+                    </div>
+                    <div class="shadow-2xl ">
+                        <img src="image/why-choose.jpeg" alt="" class="rounded-3xl mx-8 ">
+                    </div>
+
                 </div>
+
+                <div class=" flex-row mx-3 shadow-none">
+
+                    <span class="text-red-600 font-extrabold">Our Story</span>&nbsp;&nbsp;&nbsp;
+                    <h1 class="text-5xl   font-extrabold">We Invite You to Visit
+                        Our  <span class="text-red-600">Food Restaurant</span></h1>
+                    <span class="text-gray-300">Founded in 2012, Sarab began as a small corner <br> joint with a big dream - to serve food that brings
+                        <br>people together. Today we're proud  <br> to serve thousands of happy customers every week with the
+                        <br>same passion that started it all.
+                    
+
+
+                   <div class="flex-row mt-5 ">
+
+                    <div class="mb-5" >
+                        <img src="" alt="">
+                    <h2   class="text-black text-2xl font-extrabold" >100% Fresh Ingredients</h2>
+                    <p>We source locally and sustainably. Every ingredient is hand-picked daily for maximum freshness.</p>
+                   </div>
+
+
+                   <div  class="mb-5">
+                    <h2  class="text-black text-2xl font-extrabold">Award-Winning Recipes</h2>
+                    <p>Our signature recipes have won national culinary awards 5 years in a row.</p>
+                   </div>
+
+
+                   <div  class="mb-5">
+                    <h2  class="text-black text-2xl font-extrabold">Lightning-Fast Delivery</h2>
+                    <p>Order online and get hot, fresh food at your door in under 25 minutes, guaranteed.</p>
+                   </div>
+                </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+    </section>
+
+
+    <!-- popular combos  -->
+    <section class="  max-w-full  rounded-3xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="max-w-7xl m-auto text-center">
+
+            <div>
+                <h1 class="text-5xl font-bold  mb-4 ">Our Delicious Menu</h1>
+                <span class="text-2xl text-red-950 leading-1 ">Great Taste.</span>
+                <span class="text-2xl text-red-950">Better Together</span>
             </div>
 
 
 
+            <div class=" gap-[450px]  grid grid-cols-1 px-11 py-14 sm:grid-cols-2 lg:grid-cols-4 mt-12">
 
 
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                <div
-                    class="choose-box bg-white p-6 text-center shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
-                    <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-[#063F32]">
-                        Fresh Ingredients
-                    </h3>
+                <!-- 1st image -->
+                <div class="group w-[400px] overflow-hidden rounded-3xl bg-white shadow-lg
+               transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
 
-                    <p class="mt-2 text-xl leading-6 text-gray-500">
-                        Fresh and quality ingredients prepared every day.
+
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="image/pexels-jonathanborba-18713428.jpg" alt=""
+                            class="h-full w-full object-cover transition duration-300 group-hover:scale-110">
+                    </div>
+
+
+
+                    <h1 class="text-3xl font-bold text-gray-800 m-2">Party combos</h1>
+
+                    <span class="bg-[#c416164f] text-white py-1 px-3 rounded-full text-sm font-semibold mt-2">4
+                        Items</span>
+                    <p class="text-2xl font-bold text-gray-800 mt-2"><i class="fa-solid fa-indian-rupee-sign"></i>499
                     </p>
+
+                    <a href=""><button
+                            class="mt-4 w-full rounded-2xl bg-[#c416164f] px-4 py-2 text-lg font-semibold text-white transition hover:bg-[#a51a1a]">Add
+                            To Cart</button></a>
                 </div>
 
 
 
 
 
+                <!-- 2nd image -->
+                <div class="group w-[400px] gap-4  overflow-hidden rounded-3xl bg-white shadow-lg
+               transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
 
-        </section>
 
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="image/pexels-jonathanborba-18713428.jpg" alt=""
+                            class="h-full w-full object-cover transition duration-300 group-hover:scale-110">
+                    </div>
+
+
+
+                    <h1 class="text-3xl font-bold text-gray-800 m-2">Party combos</h1>
+
+                    <span class="bg-[#c416164f] text-white py-1 px-3 rounded-full text-sm font-semibold mt-2">4
+                        Items</span>
+                    <p class="text-2xl font-bold text-gray-800 mt-2"><i class="fa-solid fa-indian-rupee-sign"></i>499
+                    </p>
+
+                    <a href=""><button
+                            class="mt-4 w-full rounded-2xl bg-[#c416164f] px-4 py-2 text-lg font-semibold text-white transition hover:bg-[#a51a1a]">Add
+                            To Cart</button></a>
+                </div>
+
+
+
+
+                <!-- 3rd image -->
+                <div class="group w-[400px] overflow-hidden rounded-3xl bg-white shadow-lg
+               transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+
+
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="image/pexels-jonathanborba-18713428.jpg" alt=""
+                            class="h-full w-full object-cover transition duration-300 group-hover:scale-110">
+                    </div>
+
+
+
+                    <h1 class="text-3xl font-bold text-gray-800 m-2">Party combos</h1>
+
+                    <span class="bg-[#c416164f] text-white py-1 px-3 rounded-full text-sm font-semibold mt-2">4
+                        Items</span>
+                    <p class="text-2xl font-bold text-gray-800 mt-2"><i class="fa-solid fa-indian-rupee-sign"></i>499
+                    </p>
+
+                    <a href=""><button
+                            class="mt-4 w-full rounded-2xl bg-[#c416164f] px-4 py-2 text-lg font-semibold text-white transition hover:bg-[#a51a1a]">Add
+                            To Cart</button></a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- section-04 good foods -->
+
+    <section class="good-food max-w-full mx-auto   rounded-3xl overflow-hidden 
+           bg-cover bg-center relative" style="background-image: url('image/footer\ img.png')">
+
+
+
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex flex-col justify-center px-10">
+            <h1 class="text-5xl md:text-7xl  text-white leading-tight">
+                Good Food <br>
+                Brings People Together
+            </h1>
+
+            <a href="#" class="mt-8">
+                <button class="inline-block px-8 py-3 bg-white text-black rounded-full font-semibold
+                       hover:bg-orange-500 hover:text-white transition duration-300">
+                    View Menu
+                </button>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Stay updated section -->
+    <section class="bg-[#e8281a]  py-24 rounded-3xl shadow-xl">
+
+        <div class="   max-w-7xl m-auto sm:px-6 lg:px-8 ">
+            <h2 class="text-3xl font-extrabold text-gray-900">Stay Connected</h2>
+            <p class="mt-4 text-5xl  text-gray-600">Subscribe & Get Exclusive Deals</p>
+            <p>Get 15% off your first order plus early access to new menu items</p>
+            <form action="" class="flex flex-col gap-3 sm:flex-row sm:items-center">
+                <input
+                    class="w-full rounded-2xl border-2 border-gray-300 px-4 py-3 shadow-md outline-none transition focus:border-green-700 sm:w-auto sm:min-w-[320px]"
+                    type="email" value="" placeholder=" ✉️ Enter Your Email" required>
+                <button
+                    class="   px-4 py-3  rounded-full bg-amber-400 text-sm font-semibold text-[#063F32] shadow-md transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:text-[#a8432a] hover:shadow-[0_10px_30px_rgba(212,160,23,0.25)]"
+                    type="submit">➤ Subscribe</button>
+            </form>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- footer section -->
+    <footer class="py-16 rounded-3xl"
+        style="background-image: linear-gradient(135deg, rgba(26, 0, 0, 0.116) 0%, rgb(45, 0, 0) 100%)">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+            <div class="">
+                <img src="image/logo.png" alt="" height="90px" width="400px">
+            </div>
+            <div class="flex-row  text-gray-300  font-semibold text-center items-center ">
+                <h2 class="text-3xl mb-3.5 text-white hover:text-amber-600">Quick Links</h2>
+
+                <p class="mb-3"> <a href="">Home</a></p>
+                <p class="mb-3"><a href="">Menu</a></p>
+                <p class="mb-3"> <a href="">Gallery</a></p>
+                <p class="mb-3"> <a href="">About</a></p>
+                <p class="mb-3"> <a href="">Contact</a></p>
+            </div>
+
+
+            <div class="flex-row text-md text-gray-300 font-semibold text-center items-center ">
+                <h2 class="text-3xl mb-3.5 text-white hover:text-amber-600">Services</h2>
+
+                <p class="mb-3"> <a href="">Table Booking</a></p>
+                <p class="mb-3"><a href=""> Bulk order</a></p>
+                <p class="mb-3"> <a href="">Online Order</a></p>
+                <p class="mb-3"> <a href="">Catering</a></p>
+                <p class="mb-3"> <a href="">Outlets</a></p>
+            </div>
+
+            <div class="flex-row text-md text-gray-300  font-semibold text-center items-center ">
+                <h2 class="text-3xl mb-3.5 text-white hover:text-amber-600">Contact</h2>
+
+                <p class="mb-3 "> <a href=""> 📞 +91 9382730226</a></p>
+                <p class="mb-3"><a href=""> ✉️ @apice.com</a></p>
+                <p class="mb-3"> <a href=""> 📍 jaipur tonk phatak</a></p>
+                <!-- <p class="mb-3"> <a href="">Catering</a></p> -->
+                <!-- <p class="mb-3"> <a href="">Outlets</a></p> -->
+            </div>
+
+
+
+        </div>
+
+
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root{
+
+    --primary: #e8281a;
+    --secondary: #f5a524;
+    --dark: #1a1a1a;
+    --green: #2d6a4f;
+    --cream: #fff8f0;
+    --cream2: #fef0dc;
+    --light: #f9f5f0;
+    --shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ body {
+ 
+
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+
+ }
+ section {
+   max-width: 1280px;
+   margin:  auto;
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(231, 226, 220, 0.918),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 70%,
+            rgba(207, 209, 190, 0.89),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #ced6d8,
+            #8d8383 50%,
+            #ced3d0
+        );
+}
+
+
+.hidden {
+    font-size: 18px;
+    color: var(--dark);
+    transition: 500ms
+
+    /* text-decoration: underline var(--primary) 2px; */
+}
+
+
+.parent-header button {
+    padding: 10px 24px;
+}
+
+.hero-parent {
+    background-image: url(image/image\ \(1\).jpeg);
+    object-fit: cover;
+    /* background: center; */
+}
+
+.hero-parent button {
+    padding: 10px 24px;
+    margin: 30px;
+}
+.choose-box{
+    /* margin: 50px; */
+    /* display: grid;
+    grid-template-columns: repeat(4 1fr); */
+    height: 280px;
+    width: 250px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+
+
+
+.combos-box{
+  
+    /* margin: 80px; */
+   /* height: 400px; */
+    /* width: 350px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+
+.good-food{
+    background-image: url(image/hero-background.jpeg);
+    /* background: 400px; */
+
+    width: 1280px;
+    object-fit: cover;
+    height: 600px;
+}
