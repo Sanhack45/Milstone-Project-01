@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online</title>
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <section class="h-screen w-full mt-12 font-[Poppins] text-slate-800">
+        <div class="grid grid-cols-2 max-w-7xl  mx-auto gap-8  grow-0 md:grid-cols-2 lg:grid-cols-2">
+            <div>
+
+                <div class="w-100">
+                    <hr class="border-red-600 border-4 rounded-full">
+                    <p class="text-black font-bold text-4xl mb-16 tracking-tight">_____Online Order</p>
+                </div>
+
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-4 tracking-[-0.04em]">
+                    Dinner, <span class="text-red-800 font-serif italic">delivered</span>
+                </h1>
+                <p class="text-lg mb-8 text-slate-600 leading-relaxed">
+                    Experience the convenience of ordering <br>your favorite dishes online.
+                </p>
+
+                <div>
+                    <form action="" class="space-y-3">
+                
+                        <p class="text-2xl font-bold text-red-500 mb-3.5 tracking-tight">Order From Here</p>
+                
+                
+                        <label for="Restaurant" class="block text-base font-medium text-slate-700">Select Restaurant</label>
+                        <select class="ml-0 mt-2 border border-red-500 rounded-2xl px-4 py-2 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-red-300 hover:border-red-600"
+                            name="Restaurant" id="Restaurant">
+                            <option value="text">Choose Restaurant Near By You</option>
+                            <option value="text">Gopalpura Tonk Phatak</option>
+                            <option value="text">Durgapura</option>
+                            <option value="text">Malviya Nagar</option>
+                            <option value="text">C-scheme</option>
+                            <option value="text">GT(Gourav Tower)</option>
+                            <option value="text">Rajapark</option>
+                        </select>
+                
+                
+                    </form>
+
+                    <button
+                        class="relative mt-20 flex items-center gap-3 overflow-hidden rounded-full bg-[#f7cb0be3] px-7 py-3.5 text-sm font-bold text-black shadow-md transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:text-[#a8432a] hover:shadow-[0_10px_30px_rgba(212,160,23,0.25)]">
+                        ➤ Use My Location
+                    </button>
+                
+                
+                
+                
+                </div>
+            </div>
+
+            <!-- swiggy order -->
+            <div class="items-center justify-between">
+                <div class="max-w-2xs">
+                    <hr class="mt-20 border-2 border-red-600 rounded-full">
+                    <div>
+                        <h1 class="font-bold mt-6 text-[#f06c13d0] text-6xl tracking-tight">Swiggy</h1>
+
+                    </div>
+                    <p class="mt-2 text-slate-600">Delivery or pickup from restaurant.</p>
+                </div>
+
+
+
+
+                <div>
+                    <a href="https://www.swiggy.com/restaurants">
+                        <button
+                            class="relative mt-10 flex items-center gap-3 overflow-hidden rounded-full bg-[#f06c13d0] px-7 py-3.5 text-sm font-bold text-black shadow-md transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:text-[#040505] hover:shadow-[0_10px_30px_rgba(212,160,23,0.25)]">
+                            Order From Swiggy
+                        </button>
+                    </a>
+                </div>
+
+
+
+
+
+
+
+                <!-- zomato order -->
+                <div class="flex-row max-w-2xs">
+                
+                
+                    <div>
+                        <h1 class="font-bold mt-6 text-[#eb3e1fee] text-6xl tracking-tight">Zomato</h1>
+                    </div>
+                    <p class="mt-2 text-slate-600">Delivery or pickup from restaurant.</p>
+                </div>
+
+
+                <div>
+                    <a href="https://www.zomato.com/restaurants">
+                        <button
+                            class="relative mt-10 flex items-center gap-3 overflow-hidden rounded-full bg-[#eb3e1fee] px-7 py-3.5 text-sm font-bold text-black shadow-md transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:text-[#040505] hover:shadow-[0_10px_30px_rgba(212,160,23,0.25)]">
+                            Order From Zomato
+                        </button>
+                    </a>
+                </div>
+            
+            
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
